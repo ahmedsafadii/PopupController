@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapButton(_ sender: AnyObject) {
-        PopupController
+        _ = PopupController
             .create(self)
             .show(DemoPopupViewController1.instance())
     }
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapButton2(_ sender: AnyObject) {
-        PopupController
+        _ = PopupController
             .create(self)
             .customize(
                 [
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             popup.dismiss()
         }
 
-        popup.show(container)
+        _ = popup.show(container)
     }
 
     @IBAction func didTapButton4(_ sender: AnyObject) {
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
             .customize(
                 [
                     .layout(.top),
-                    .animation(.slideDown),
+                    .animation(.slideUp),
                     .scrollable(false),
                     .dismissWhenTaps(false),
                     .backgroundStyle(.blackFilter(alpha: 0))
@@ -95,6 +95,6 @@ class ViewController: UIViewController {
             popup.dismiss()
         }
 
-        popup.show(container)
+        _ = popup.show(container)
     }
 }

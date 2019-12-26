@@ -1,0 +1,21 @@
+PODS:
+  - PopupController (0.2.0)
+
+DEPENDENCIES:
+  - PopupController (from `https://github.com/ahmedsafadii/PopupController.git`)
+
+EXTERNAL SOURCES:
+  PopupController:
+    :git: https://github.com/ahmedsafadii/PopupController.git
+
+CHECKOUT OPTIONS:
+  PopupController:
+    :commit: 4568dd6caee1470dc74099a1e4ac0f6d0b96d0ca
+    :git: https://github.com/ahmedsafadii/PopupController.git
+
+SPEC CHECKSUMS:
+  PopupController: 0b69fdf11cbeaa807789a8c3992599083640988f
+
+PODFILE CHECKSUM: 47ace0629e9b2fca4c055cd79268d92ae929a0e7
+
+COCOAPODS: 1.9.0.beta.2

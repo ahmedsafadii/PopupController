@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		070595441E27B5730001EC00 /* DemoPopupViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070595431E27B5730001EC00 /* DemoPopupViewController4.swift */; };
 		070595461E27B57D0001EC00 /* DemoPopupViewController4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070595451E27B57D0001EC00 /* DemoPopupViewController4.storyboard */; };
+		7D984A4CBFB41D7369FC8159 /* Pods_PopupControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9E06E5D8F0F7C87C9DB0F7 /* Pods_PopupControllerTests.framework */; };
 		9D468A051C63601D00AF56C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D468A041C63601D00AF56C7 /* AppDelegate.swift */; };
 		9D468A071C63601D00AF56C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D468A061C63601D00AF56C7 /* ViewController.swift */; };
 		9D468A0A1C63601D00AF56C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D468A081C63601D00AF56C7 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		9D468A421C638D8B00AF56C7 /* DemoPopupViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D468A411C638D8B00AF56C7 /* DemoPopupViewController2.storyboard */; };
 		9D61E9101C69CC6200E74610 /* DemoPopupViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D61E90F1C69CC6200E74610 /* DemoPopupViewController3.swift */; };
 		9D61E9121C69CC7300E74610 /* DemoPopupViewController3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D61E9111C69CC7300E74610 /* DemoPopupViewController3.storyboard */; };
+		D235B242B9FF4CBDB479813E /* Pods_PopupController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFBF03CD7DE940C5F200063 /* Pods_PopupController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		070595431E27B5730001EC00 /* DemoPopupViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPopupViewController4.swift; sourceTree = "<group>"; };
 		070595451E27B57D0001EC00 /* DemoPopupViewController4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoPopupViewController4.storyboard; sourceTree = "<group>"; };
+		4D280AAB9570250AFCBBE678 /* Pods-PopupController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupController.debug.xcconfig"; path = "Target Support Files/Pods-PopupController/Pods-PopupController.debug.xcconfig"; sourceTree = "<group>"; };
+		9122FBA8D701CD4BE82BA07F /* Pods-PopupControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupControllerTests.release.xcconfig"; path = "Target Support Files/Pods-PopupControllerTests/Pods-PopupControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D468A011C63601D00AF56C7 /* PopupController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D468A041C63601D00AF56C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D468A061C63601D00AF56C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,10 @@
 		9D468A411C638D8B00AF56C7 /* DemoPopupViewController2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoPopupViewController2.storyboard; sourceTree = "<group>"; };
 		9D61E90F1C69CC6200E74610 /* DemoPopupViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPopupViewController3.swift; sourceTree = "<group>"; };
 		9D61E9111C69CC7300E74610 /* DemoPopupViewController3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DemoPopupViewController3.storyboard; sourceTree = "<group>"; };
+		BEFD5E0FD9FA44AFEBB80E42 /* Pods-PopupControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupControllerTests.debug.xcconfig"; path = "Target Support Files/Pods-PopupControllerTests/Pods-PopupControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB9E06E5D8F0F7C87C9DB0F7 /* Pods_PopupControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopupControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFBF03CD7DE940C5F200063 /* Pods_PopupController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopupController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC61298BC3C8AB78D19F8ED7 /* Pods-PopupController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupController.release.xcconfig"; path = "Target Support Files/Pods-PopupController/Pods-PopupController.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D235B242B9FF4CBDB479813E /* Pods_PopupController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D984A4CBFB41D7369FC8159 /* Pods_PopupControllerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +94,8 @@
 				9D468A031C63601D00AF56C7 /* PopupController */,
 				9D468A181C63601D00AF56C7 /* PopupControllerTests */,
 				9D468A021C63601D00AF56C7 /* Products */,
+				C148E523D1FA2CA5E7CC5E93 /* Pods */,
+				C08925378AC8BA84D60FBF01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +149,27 @@
 			name = DemoViewControllers;
 			sourceTree = "<group>";
 		};
+		C08925378AC8BA84D60FBF01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBF03CD7DE940C5F200063 /* Pods_PopupController.framework */,
+				EB9E06E5D8F0F7C87C9DB0F7 /* Pods_PopupControllerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C148E523D1FA2CA5E7CC5E93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D280AAB9570250AFCBBE678 /* Pods-PopupController.debug.xcconfig */,
+				FC61298BC3C8AB78D19F8ED7 /* Pods-PopupController.release.xcconfig */,
+				BEFD5E0FD9FA44AFEBB80E42 /* Pods-PopupControllerTests.debug.xcconfig */,
+				9122FBA8D701CD4BE82BA07F /* Pods-PopupControllerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,10 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D468A291C63601D00AF56C7 /* Build configuration list for PBXNativeTarget "PopupController" */;
 			buildPhases = (
+				33E46354CC5D0B64DA242F96 /* [CP] Check Pods Manifest.lock */,
 				9D4689FD1C63601D00AF56C7 /* Sources */,
 				9D4689FE1C63601D00AF56C7 /* Frameworks */,
 				9D4689FF1C63601D00AF56C7 /* Resources */,
 				F56A082C235FA76B0072BE59 /* SwiftLint - You should really be following these guidelines */,
+				FB31CE37A8EF3F8B6B8E46D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D468A2C1C63601D00AF56C7 /* Build configuration list for PBXNativeTarget "PopupControllerTests" */;
 			buildPhases = (
+				F9EF9700972C98A6A4A8A5D8 /* [CP] Check Pods Manifest.lock */,
 				9D468A111C63601D00AF56C7 /* Sources */,
 				9D468A121C63601D00AF56C7 /* Frameworks */,
 				9D468A131C63601D00AF56C7 /* Resources */,
@@ -242,6 +278,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		33E46354CC5D0B64DA242F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PopupController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F56A082C235FA76B0072BE59 /* SwiftLint - You should really be following these guidelines */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +317,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ $(swiftlint version 2>&1) =~ 0\\.35\\.0 ]]\nthen\nswiftlint\nelse\necho \"SwiftLint is not the correct version\"\nfi\n";
+		};
+		F9EF9700972C98A6A4A8A5D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PopupControllerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB31CE37A8EF3F8B6B8E46D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PopupController/Pods-PopupController-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PopupController/PopupController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PopupController/Pods-PopupController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -428,6 +526,7 @@
 		};
 		9D468A2A1C63601D00AF56C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D280AAB9570250AFCBBE678 /* Pods-PopupController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -440,6 +539,7 @@
 		};
 		9D468A2B1C63601D00AF56C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC61298BC3C8AB78D19F8ED7 /* Pods-PopupController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -452,6 +552,7 @@
 		};
 		9D468A2D1C63601D00AF56C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEFD5E0FD9FA44AFEBB80E42 /* Pods-PopupControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PopupControllerTests/Info.plist;
@@ -464,6 +565,7 @@
 		};
 		9D468A2E1C63601D00AF56C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9122FBA8D701CD4BE82BA07F /* Pods-PopupControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PopupControllerTests/Info.plist;

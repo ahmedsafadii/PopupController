@@ -46,7 +46,7 @@ open class PopupController: UIViewController {
     }
     
     public enum PopupAnimation {
-        case fadeIn, slideUp, slideDown
+        case fadeIn, slideUp
     }
     
     public enum PopupBackgroundStyle {
@@ -133,12 +133,12 @@ public extension PopupController {
         
         return controller
     }
+    
     func customize(_ options: [PopupCustomOption]) -> PopupController {
         customOptions(options)
         return self
     }
-
-    @discardableResult
+    
     func show(_ childViewController: UIViewController) -> PopupController {
         self.addChild(childViewController)
         popupView = childViewController.view
@@ -263,10 +263,8 @@ private extension PopupController {
     }
     
     @objc func popupControllerWillShowKeyboard(_ notification: Notification) {
-        self.isShowingKeyboard = true
-        guard let obj = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {
-            return
-        }
+        isShowingKeyboard = true
+        let obj = (notification as NSNotification).userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
         
         if needsToMoveFrom(obj.cgRectValue.origin) {
             move(obj.cgRectValue.origin)
@@ -283,7 +281,9 @@ private extension PopupController {
     
     // Tap Gesture
     @objc func didTapGesture(_ sender: UITapGestureRecognizer) {
-        self.closePopup(nil)
+        self.closePopup {
+            
+        }
     }
     
     func closePopup(_ completion: (() -> Void)?) {
@@ -309,7 +309,7 @@ private extension PopupController {
         guard let childViewController = children.last as? PopupContentViewController else {
             return
         }
-
+        
         popupView.frame.size = childViewController.sizeForPopup(self, size: maximumSize, showingKeyboard: isShowingKeyboard)
         popupView.frame.origin.x = layout.origin(popupView!).x
         
@@ -320,10 +320,6 @@ private extension PopupController {
             })
         case .slideUp:
             slideUp(layout, completion: { () -> Void in
-                completion()
-            })
-        case .slideDown:
-            slideDown(layout, completion: { () -> Void in
                 completion()
             })
         }
@@ -348,12 +344,8 @@ private extension PopupController {
                 self.clean()
                 completion()
             })
-        case .slideDown:
-            self.slideDown({ () -> Void in
-                self.clean()
-                completion()
-            })
         }
+        
     }
     
     func needsToMoveFrom(_ origin: CGPoint) -> Bool {
@@ -426,23 +418,6 @@ private extension PopupController {
                 completion()
         })
     }
-
-    func slideDown(_ layout: PopupLayout, completion: @escaping () -> Void) {
-        view.isHidden = false
-        baseScrollView.backgroundColor = UIColor.clear
-        baseScrollView.contentInset.top = layout.origin(popupView).y
-        baseScrollView.contentOffset.y = self.popupView.frame.size.height
-
-        UIView.animate(
-            withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .curveLinear, animations: { () -> Void in
-
-                self.updateBackgroundStyle(self.backgroundStyle)
-                self.baseScrollView.contentOffset.y = -layout.origin(self.popupView).y
-                self.defaultContentOffset = self.baseScrollView.contentOffset
-        }, completion: { (isFinished) -> Void in
-            completion()
-        })
-    }
     
     func fadeOut(_ completion: @escaping () -> Void) {
         
@@ -465,16 +440,6 @@ private extension PopupController {
                 completion()
         })
     }
-
-    func slideDown(_ completion: @escaping () -> Void) {
-
-        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .curveLinear, animations: { () -> Void in
-            self.popupView.frame.origin.y -= self.popupView.frame.size.height
-            self.baseScrollView.alpha = 0.0
-        }, completion: { (isFinished) -> Void in
-            completion()
-        })
-    }
 }
 
 // MARK: UIScrollViewDelegate methods
@@ -493,7 +458,9 @@ extension PopupController: UIScrollViewDelegate {
         if delta > 50 {
             baseScrollView.contentInset.top = -scrollView.contentOffset.y
             animation = .slideUp
-            self.closePopup(nil)
+            self.closePopup {
+                
+            }
         }
     }
     
