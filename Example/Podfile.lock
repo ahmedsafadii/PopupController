@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   PopupController:
-    :commit: 4568dd6caee1470dc74099a1e4ac0f6d0b96d0ca
+    :commit: 3c4369022b940120dba9399521c86c4431270eb6
     :git: https://github.com/ahmedsafadii/PopupController.git
 
 SPEC CHECKSUMS:

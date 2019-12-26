@@ -21,7 +21,7 @@ Try *PopupController* on [Appetize.io](https://appetize.io/app/k498jv54rud8erd7d
 ### CocoaPods
 
 ```
-pod 'PopupController'
+pod 'PopupController', :git => 'https://github.com/ahmedsafadii/PopupController.git'
 ```
 
 ### Carthage
